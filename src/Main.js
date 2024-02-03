@@ -81,6 +81,7 @@ function Main() {
                 >
                   <img
                     className="first-img"
+                    loading="lazy"
                     src={
                       !loades
                         ? require("./images/background-img.png")
@@ -111,6 +112,7 @@ function Main() {
               <img
                 className="first-img"
                 onLoad={handleload}
+                loading="lazy"
                 src={
                   !loades
                     ? require("./images/background-img.png")
@@ -134,6 +136,7 @@ function Main() {
               onClick={() => handleclick(data)}
             >
               <img
+                loading="lazy"
                 onLoad={handleload}
                 className="first-img"
                 src={
