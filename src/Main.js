@@ -13,7 +13,6 @@ function Main() {
   const [second, setSecond] = useState([]);
   const [third, setThrid] = useState([]);
   const [loades, setLoades] = useState(false);
-  const [bannerload, setBanneerLoad] = useState(false);
 
   const baseurl = "https://image.tmdb.org/t/p/original/";
 
@@ -31,9 +30,7 @@ function Main() {
   const handleload = () => {
     setLoades(true);
   };
-  const bannerLoad = () => {
-    setBanneerLoad(true);
-  };
+
   const handleclick = async (data) => {
     const id = data.id;
 
